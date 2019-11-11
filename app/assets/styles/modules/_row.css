@@ -1,8 +1,6 @@
 .row {
 	@mixin clearfix;
-	
-	
-	
+		
 	&--gutters {
 		margin-right:-65px;/*kontra dla ostatniego elementu*/
 	}
@@ -31,10 +29,15 @@
 		margin-bottom: 1rem;
 	}
 	
+	&__b-margin-until-large {
+		margin-bottom: 1rem;
+	}
+	
 	&--t-padding {
 		padding-top:70px;
 	}
 	
+	/*
 	@mixin atMedium {
 		
 		&__b-margin-until-medium {
@@ -70,9 +73,18 @@
 			width: 63%;
 			
 		}
-
 		
+		&--equal-height-at-medium 
+		{
+			display:flex;
+			
+			& > div {
+				float:none;
+				display:flex;
+			}
+		}
 	}
+	*/
 	
 	@mixin atLarge {
 		
@@ -109,28 +121,15 @@
 			width: 63%;
 			
 		}
-
 		
-	}
-	
-	/* Begin equal height rules*/
-	&--equal-height-at-medium 
-	{
-		display:flex;
-		
-		& > div {
-			float:none;
+		&--equal-height-at-large
+		{
 			display:flex;
-		}
-	}
-	
-	&--equal-height-at-large
-	{
-		display:flex;
-		
-		& > div {
-			float:none;
-			display:flex;
+			
+			& > div {
+				float:none;
+				display:flex;
+			}
 		}
 	}
 }
