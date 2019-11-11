@@ -548,8 +548,7 @@ a {
 	}
 
 .wrapper {
-	padding-left:18px;
-	padding-right:18px;
+	
 	overflow:hidden;
 	
 	max-width:1236px;
@@ -576,10 +575,35 @@ a {
 	}
 	}
 
+.wrapper--no-paddig-until-medium {
+		padding-left:0;
+		padding-right:0;
+	}
+
+@media (min-width: 800px){
+
+.wrapper--no-paddig-until-medium {
+			padding-left:18px;
+			padding-right:18px
+	}
+	}
+
+.wrapper--no-paddig-until-large {
+		padding-left:0;
+		padding-right:0;
+	}
+
+@media (min-width: 1200px){
+
+.wrapper--no-paddig-until-large {
+			padding-left:18px;
+			padding-right:18px
+	}
+	}
+
 .page-section
 {
 	padding:1.2rem 0;
-	
 }
 
 @media (min-width: 800px){
@@ -587,14 +611,47 @@ a {
 .page-section
 {
 		padding:4.5rem 0
-	
 }
 	}
 
-.page-section--blue{
-	background:#2f5572;
-	color:#fff;
-}
+.page-section--blue {
+		background:#2f5572;
+		color:#fff;
+	}
+
+.page-section--testimonials {
+		background:#e0e6ef;
+	}
+
+@media (min-width: 800px){
+
+.page-section--testimonials {
+			background: url(/assets/images/testimonials-bg.jpg) top center no-repeat;
+			background-size:cover
+	}
+	}
+
+.page-section--no-b-paddig-until-medium{
+		padding-bottom:0;
+	}
+
+@media (min-width: 800px){
+
+.page-section--no-b-paddig-until-medium{
+			padding-bottom:4.5rem
+	}
+	}
+
+.page-section--no-b-paddig-until-large{
+		padding-bottom:0;
+	}
+
+@media (min-width: 1200px){
+
+.page-section--no-b-paddig-until-large{
+			padding-bottom:4.5rem
+	}
+	}
 
 .headline {
 	font-weight:300;
@@ -664,6 +721,10 @@ a {
 		margin-right:-100px;/*kontra dla ostatniego elementu*/
 	}
 
+.row--gutters-small {
+		margin-right:-45px;/*kontra dla ostatniego elementu*/
+	}
+
 .row--gutters > div {
 		padding-right:65px;		
 	}
@@ -672,8 +733,16 @@ a {
 		padding-right:100px;		
 	}
 
+.row--gutters-small > div {
+		padding-right:45px;		
+	}
+
 .row__b-margin-until-medium {
 		margin-bottom: 1rem;
+	}
+
+.row--t-padding {
+		padding-top:70px;
 	}
 
 @media (min-width: 800px){
@@ -687,7 +756,7 @@ a {
 			width: 33.33%;
 		
 		}
-		
+				
 		.row__medium-4--larger {
 			float:left;
 			width: 37%;
@@ -713,12 +782,76 @@ a {
 		}
 	}
 
+@media (min-width: 1200px){
+		
+		.row__b-margin-until-large {
+			margin-bottom:0;
+		}
+		
+		.row__medium-4 {
+			float:left;
+			width: 33.33%;
+		
+		}
+				
+		.row__medium-4--larger {
+			float:left;
+			width: 37%;
+		
+		}
+		
+		.row__medium-6 {
+			float:left;
+			width: 50%;
+		
+		}
+	
+		.row__medium-8 {
+			float:left;
+			width: 66.66%;
+			
+		}
+		
+		.row__medium-8--smaller {
+			float:left;
+			width: 63%;
+			
+		}
+	}
+
+/* Begin equal height rules*/
+
+.row--equal-height-at-medium 
+	{
+		display:-webkit-box;
+		display:flex;
+	}
+
+.row--equal-height-at-medium > div {
+			float:none;
+			display:-webkit-box;
+			display:flex;
+		}
+
+.row--equal-height-at-large
+	{
+		display:-webkit-box;
+		display:flex;
+	}
+
+.row--equal-height-at-large > div {
+			float:none;
+			display:-webkit-box;
+			display:flex;
+		}
+
 .generic-content-container p {
 		line-height: 1.65;
 		font-size: 1rem;/*default 16px*/
 		font-weight:300;
 		margin: 0 0 1.8rem 0;
 		text-align:justify;
+		padding: 0 1rem;
 		
 	}
 
@@ -747,7 +880,15 @@ a {
 }
 	}
 
+.section-title--blue {
+		color:#2f5572;
+	}
+
 .section-title__icon {
+		
+		position:relative;
+		top:8px;
+		
 		display:block;
 		margin-left: auto;
 		margin-right: auto;
@@ -807,5 +948,51 @@ a {
 			font-size: 1.875rem;
 			margin-bottom:.8rem			
 	}
+	}
+
+.testimonial {
+	background: rgba(255,255,255,0.8);
+	
+	padding: 0 18px 1px 18px;
+	margin-bottom: 98px;
+}
+
+@media (min-width: 800px){
+
+.testimonial {
+		padding: 0 1.8125rem 1px 1.8125rem;
+		margin-bottom:0
+}
+	}
+
+.testimonial__foto {
+		width: 160px;
+		height: 160px;
+		border-radius:80px;
+		overflow:hidden;
+		margin: 0 auto -80px auto;
+		position:relative;
+		top: -80px;
+		border:solid 6px rgba(255,255,255,0.8);
+	}
+
+.testimonial--last{
+		margin-bottom:0;		
+	}
+
+.testimonial__title {
+		color:#2f5572;
+		text-align:center;
+		font-size: 1.5rem;
+		font-weight: 500;
+		margin:0;
+	}
+
+.testimonial__subtitle {
+		font-size:0.9375rem;
+		font-weight:400;
+		text-align:center;
+		color:#d59541;
+		margin:0.25rem auto 1.25rem auto;
 	}
 

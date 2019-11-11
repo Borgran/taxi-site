@@ -6,6 +6,7 @@
 		font-weight:300;
 		margin: 0 0 1.8rem 0;
 		text-align:justify;
+		padding: 0 1rem;
 			
 		@mixin atSmall {
 			font-size: 1.125rem;
