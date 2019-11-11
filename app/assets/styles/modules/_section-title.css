@@ -7,11 +7,20 @@
 		font-size: 3.75rem;
 	}
 	
+	&--blue {
+		color:$blue;
+	}
+	
 	&__icon {
+		
+		position:relative;
+		top:8px;
+		
 		display:block;
 		margin-left: auto;
 		margin-right: auto;
 		margin-bottom: 0.6rem;
+		
 		
 		@mixin atSmall {
 			margin-right: .5rem;
