@@ -9,5 +9,12 @@ img {
 	height:auto;
 }
 
+* {
+	box-sizing:border-box;/*zmiania sposob wyliczania paddingow, wliczane zamiast dodawanych*/
+}
+
+a {
+	color:$orange;
+}
 
 
