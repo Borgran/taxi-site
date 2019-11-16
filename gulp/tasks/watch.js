@@ -20,6 +20,11 @@ gulp.task('watch', function(){
 		browserSync.reload();
 	});	
 	
+	watch('./app/assets/scripts/**/*.js',function () {
+		console.log('JAVA changed!');
+		browserSync.reload();
+	});	
+	
 	watch('./app/assets/styles/**/*.css', gulp.series("buildCSS", "reloadCSS", function () {
 		console.log('CSS updated and browser refresh!');					
 	}));	
