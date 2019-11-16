@@ -923,16 +923,16 @@ a {
 	}
 
 .feature-item__icon {
-		
+
 		display:block;
-		margin:0 auto;	
+		margin:0 auto;
 	}
 
 @media (min-width: 530px){
 
 .feature-item__icon {
 			position:absolute;
-			left:0	
+			left:0
 	}
 	}
 
@@ -940,7 +940,7 @@ a {
 		font-size: 1.6rem;
 		font-weight:300;
 		margin-bottom:.7rem;
-		text-align:center;			
+		text-align: center;
 	}
 
 @media (min-width: 530px){
@@ -948,7 +948,7 @@ a {
 .feature-item__title {
 			text-align:left;
 			font-size: 1.875rem;
-			margin-bottom:.8rem			
+			margin-bottom:.8rem
 	}
 	}
 
@@ -996,5 +996,26 @@ a {
 		text-align:center;
 		color:#d59541;
 		margin:0.25rem auto 1.25rem auto;
+	}
+
+.site-footer {
+	background: #2f5572;
+	color:#fff;
+	text-align:center;
+	padding: .5rem;
+}
+
+.site-footer__text {
+		font-weight:200;
+		display:block;
+		margin-bottom: 1rem;
+	}
+
+@media (min-width: 800px){
+
+.site-footer__text {
+			display:inline;
+			margin-right: 2rem
+	}
 	}
 
