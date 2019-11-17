@@ -1,21 +1,27 @@
 {
   "name": "taxi-site",
   "version": "1.0.0",
+  "scripts": {
+    "dev": "webpack-dev-server"
+  },
   "dependencies": {
     "jquery": "3.4.0",
-    "normalize.css": "7.0.0"
+    "lodash": "^4.17.15",
+    "normalize.css": "^8.0.1"
   },
   "devDependencies": {
     "autoprefixer": "^9.7.1",
     "browser-sync": "^2.26.7",
-    "gulp": "^4.0.2",
-    "gulp-postcss": "^8.0.0",
-    "gulp-sequence": "^1.0.0",
-    "gulp-watch": "^5.0.1",
+    "css-loader": "^3.2.0",
     "postcss-hexrgba": "^2.0.0",
     "postcss-import": "^12.0.1",
+    "postcss-loader": "^3.0.0",
     "postcss-mixins": "^6.2.3",
     "postcss-nested": "^4.1.2",
-    "postcss-simple-vars": "^5.0.2"
+    "postcss-simple-vars": "^5.0.2",
+    "style-loader": "^1.0.0",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.9.0"
   }
 }
