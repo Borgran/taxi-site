@@ -3,8 +3,10 @@ import debounce from 'lodash/debounce'
 
 class RevealOnScroll {
 	
-	constructor() {
-		this.itemToReveal = document.querySelectorAll(".feature-item");
+	constructor(els, thresholdpercent) {
+		this.itemToReveal = els;
+		this.thresholdpercent = thresholdpercent;
+		
 		this.browserHeight = window.innerHeight;
 		this.hideInit();
 		this.scrollThrottle = throttle(this.calcCaller, 200).bind(this);
@@ -39,7 +41,7 @@ class RevealOnScroll {
 	calculateIfScrolledTo(e) {
 		if (window.scrollY + this.browserHeight > e.offsetTop) {/*Nie sprawdzaj jeśli dolna cześć okna jest wyżej niż element*/
 			let scrollPercent = (e.getBoundingClientRect().top / window.innerHeight) *100;
-			if (scrollPercent < 75) {/*Pokaż tylko gdy element sięgnie 75% okna*/
+			if (scrollPercent < this.thresholdpercent) {/*Pokaż tylko gdy element sięgnie 75% okna*/
 				e.classList.add("reveal-item--is-visible");
 				e.isRevealed = true;
 				if (e.isLastItem == true) {

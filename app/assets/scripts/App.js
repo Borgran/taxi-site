@@ -7,4 +7,5 @@ if (module.hot) {
 }
 
 let MM = new MobileMenu();
-let RS = new RevealOnScroll();
+new RevealOnScroll(document.querySelectorAll(".feature-item"), 75);
+new RevealOnScroll(document.querySelectorAll(".testimonial"), 80);
